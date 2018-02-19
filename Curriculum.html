@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn French with us at Déplace</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Didact+Gothic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Didact+Gothic|Lateef|Niconne" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Courgette|Playfair+Display" rel="stylesheet"> 
+	 <link href="https://fonts.googleapis.com/css?family=Courgette|Merienda+One|Playfair+Display" rel="stylesheet"> 
+	 <link href="https://fonts.googleapis.com/css?family=Courgette|Merienda+One|Playfair+Display|Roboto" rel="stylesheet">
+
+	<style>
+
+	*{
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+	}
+
+	.border{
+		border:1px solid black;
+		height:20em;
+	}
+
+	.parallax{
+    background-image: url("conversation.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+
+	.inner-div{
+		background-color:grey;
+		opacity:0.4;
+		color:black;
+		margin:0!important;
+		height:35.6em;
+	}
+
+	.parallaxes{
+		padding-left:0!important;
+		padding-top: 0!important;
+	}
+
+	.inner-div>h1{
+		font-family: 'Lobster', cursive;
+		padding-left: 1.5em;
+
+	}
+
+	.inner-div>p{
+		font-family: 'Courgette', cursive;
+		font-size:1.5em;
+		line-height:1.5em;
+		padding-left: 2em;
+	}
+
+	.inner-div>h2{
+		font-family: 'Courgette', cursive;
+		text-align: center;
+		padding-left: 1.5em;
+
+	}
+
+	.proper-body{
+		background-color: grey!important;
+		padding:1em 0 0 2em; 
+	}
+
+	.border{
+		border:1px solid red;
+	}
+	
+	.inner-pic{
+		height:16em;
+		float:left;
+		margin-bottom: 1em!important;
+		padding:0;
+		font-family: 'Merienda One', cursive;
+	}
+	.inner-pic>.row{
+		padding:0;
+		margin:0;
+		height:100%;
+	}
+
+	.clearing:after{
+			content:"";
+			clear:both;
+			display:block;
+	}
+
+	.inner-label{
+		background-color: white;
+		opacity:0.8;
+		height:100%!important;
+		padding:0;
+		float:right;
+	}
+
+	.inner-label>h2{
+		font-size: 2em!important;
+	}
+
+	.slider{
+		background-color: white;
+		opacity:0.6;
+		height:100%;
+		font-family: 'Roboto', sans-serif;
+		padding-top: 1em!important;
+		font-weight: bold;
+		text-align: justify;
+		position: absolute;
+  		overflow:hidden;
+  		transition: 0.6s ease;
+  		width:0;
+  		color:white;
+  		font-size: 1em;
+
+	}
+
+	.niveau-a1{
+		background-image:url("niveau-a1.jpg");
+		background-size:100%;
+
+	}
+
+	.niveau-a2{
+		background-image:url("niveau-a2.jpg");
+		background-size:100%;
+	}
+
+	.niveau-b1{
+		background-image:url("niveau-b1.jpg");
+		background-size:100%;
+
+	}
+
+	.niveau-b2{
+		background-image:url("niveau-b2.jpg");
+		background-size:100%;
+	}
+
+	.niveau-c1{
+		background-image:url("niveau-c1.jpg");
+		background-size:100%;
+
+	}
+
+	.niveau-c2{
+		background-image:url("niveau-c2.jpg");
+		background-size:100%;
+	}
+
+	.proper-body-title{
+		background-color: none; 
+		height:5em;
+		border: 3px solid grey;
+		margin-bottom: 1em;
+		padding: 0em 0em 0em 1em!important;
+		text-align: center;
+		font-family: 'Courgette', cursive;
+		margin-top:0.5px;
+		float:left;
+	}
+
+	.inner-pic:hover .slider {
+	  	width: 75%;
+	  	color: black!important;
+	}
+
+	.proper-body-title-2{
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		color: grey;
+	}
+
+	.proper-body-title:hover .proper-body-title-1{
+		color:white;
+	}
+
+	.proper-body-title:hover .proper-body-title-2{
+		width:100%;
+		height:100%;
+		margin-top:0.5em;
+	}
+
+	.proper-body-title:hover {
+		background-color: white;
+
+	}
+
+	.teachers{
+		background-image:url("teach.jpg");
+		min-height:10em;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+
+	}
+
+
+
+	.teachers>.row{
+		margin:0;
+	}
+
+	.teacher-list>.row{
+		padding-top: 3em;
+	}
+
+	.inner-teacher-label{
+		opacity:0.7;
+		height:100%;
+		background-color: #70c1b3;
+		color:black;
+		padding-left: 2em;
+		padding-right:3em;
+	}
+
+	.inner-teacher-label>p{
+		font-family: 'Roboto', sans-serif;
+		font-weight:bold;
+		font-size: 1.2em;
+		text-align: justify;
+		line-height: 1.2em;
+	}
+
+	.inner-teacher-label>h2{
+		font-family: 'Lobster', cursive;
+		font-weight:bold;
+	}
+
+	.inner-teacher-label>h3{
+		font-family: 'Courgette', cursive;
+		font-weight:bold;
+	}
+
+	.picture-teachers{
+		border-radius:100%;
+		height:10em;
+		width:auto;
+	}
+
+	.picture-container{
+		width:10em;
+		margin:0 auto;
+	}
+
+	.super-background{
+    background-image: url("eiffel-tower-night.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+
+	.teacher-list>.row,.floating{
+		float:left;
+	}
+
+	.teacher-list{
+		background-color:#247BA0;
+		opacity:0.8;
+	}
+
+	.teacher-profile>h2{
+		font-family: 'Lobster', cursive;
+		text-align: center;
+		position:relative;
+		top:-0.4em;
+	}
+
+	.teacher-profile>p{
+		font-family: 'Roboto', sans-serif;
+		font-weight:bold;
+		font-size:1.1em;
+		position:relative;
+		top:-0.4em;
+		text-align: justify;
+	}
+
+	.teacher-ms-minchin{
+		background-image:url("teacher-ms-minchin.jpg");
+		background-size:100%;
+	}
+
+	.teacher-umbridge{
+		background-image:url("teacher-umbridge.jpg");
+		background-size:100%;
+	}
+
+	/*Footer*/
+	footer,footer>.row{
+		background-color: black;
+		padding:0!important;
+		margin:0!important;
+	}
+
+	.contact{
+		color:white;
+		padding:1em	;
+		float:left;
+	}
+
+	.contact>div>p{
+		line-height: 0.8em!important;
+		font-weight:bold;
+		float:left;
+	}
+
+
+	.glyphicon-editor{
+		float:left;
+		color:white;
+		float:left;
+	}
+
+	.adjust-footer-right>p{
+		color:white;
+		font-weight:bold;
+		padding-top:1em;
+	}
+
+	.footer-inner-div{width:11.11%;}
+	.footer-inner-p{width:88.89%;padding: 0!important}
+
+
+	/*Navbar*/
+
+	.adjuster{
+		opacity:0.4!important;
+		height: 5em!important;
+		margin:0!important;
+		font-weight:bold;
+		font-size: 1em;
+		position:fixed;
+	}
+
+	#another-adjuster,.another-adjuster-2{
+		padding-left:0!important;
+		padding-right:0!important;
+	}
+
+	nav{
+		z-index: 99999;
+		position:fixed;
+	}
+
+	@media (max-width: 768px){
+		.parallax>.row{
+			float:left;
+		}
+
+		.proper-body{
+			padding:0.5em;
+			margin:0;
+			width:100%;
+		}
+
+		.proper-body>.row{
+			width:100%;
+			padding:0.5em!important;
+		}
+
+		.proper-body>.row>.proper-body-title{
+			width:100%;
+			padding:0.5em!important;
+		} 
+		.inner-pic{
+			width:100%!important;
+			padding:0!important;
+		}
+
+		.inner-pic-row{
+			margin:0;
+			padding:0;
+		}
+
+		.inner-teacher-label{
+			float:left!important;
+			margin:0!important;
+		}
+
+		.slider{
+			width:75%!important;
+			color:black!important;
+			margin-left: 25%;
+		}
+
+		.inner-label>h2,.inner-label>h3{
+			font-size: 2em!important;
+		}
+
+		.proper-body-title,.proper-body-title:hover{
+			background-color:white!important;
+		}
+
+		.proper-body-title-1{
+			z-index:9999;
+			background-color: white;
+			color:grey!important;
+		}
+
+		.proper-body-title-2{
+			z-index:-1;
+		}
+
+		.inner-label{
+			width:25%!important;
+			padding:1em!important;
+			margin:0!important;
+			float:left!important;
+		}
+
+		.teacher-profile>p{
+			margin-left:1em!important;
+			margin-right:1em!important;
+		}
+
+		.inner-teacher-label>p{
+			font-size:1em!important;
+		}
+
+		
+		#languages,#languages>li{
+			float:left;
+		}
+
+		/*Footer*/
+		.adjust-footer-right>p,.adjust-footer-right>button{
+		float:left!important;
+		}
+
+		.contact{
+			width:100%;
+		}
+
+		footer p{
+			font-size: 0.8em!important;
+		}
+	}
+	
+
+	</style>
+
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+     	<nav class="navbar navbar-default adjuster" id="header-id" style="width:100%">
+		  	<div class="container-fluid">
+		  		<ul class="nav navbar-nav navbar-left another-adjuster-2" id="languages">
+	  				<li><a href="Home_Page.html">Home</a></li>
+			    </ul>
+		  		<div class="collapse navbar-collapse coloring col-md-10" id="another-adjuster">
+		  			<ul class="nav navbar-nav" id="header-choices">
+				        <li><a href="Trip.html">Explore Itineraries</a></li>
+				        <li><a href="Contact.html">Enroll Now</a></li>
+				        <li><a href="#footer-contact">Contact Us</a></li>
+		  			</ul>
+				</div><!-- /.navbar-collapse -->
+				<ul class="nav navbar-nav navbar-right" id="languages">
+	  				<li><a href="Curriculum.html">English</a></li>
+	  				<li><a href="Curriculum-fr.html">Français</a></li>
+			    </ul>
+			</div><!-- /.container-fluid -->
+		</nav>
+
+
+	<div class="parallax parallaxes clearing">
+		<div class="row">
+			<div class="inner-div col-md-4">
+				<br><br><br>
+				<h1>Parlez<br> 
+				&nbsp;&nbsp;&nbsp;Avec<br> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La Confiance</h1>
+				<h2>Speak with Confidence</h2>
+				<p><small>Are you a beginner in French? Or do you wish to improve your skills in a conversation in French. We have CEFR-compliant courses that matches your needs. Hover over the CEFR levels below to know more.</small></p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="proper-body container-fluid col-sm-12 clearing"> 
+			<div class="row">	
+				<div class="proper-body-title col-md-offset-1 col-md-9 col-sm-12">
+					<h2 class="proper-body-title-1"> Choose your level</h2>
+					<h2 class="proper-body-title-2"> Choissisez le niveau </h2>
+				</div>
+				<div class="col-md-4 col-md-offset-1 col-sm-12  inner-pic niveau-a1">
+					<div class="row">
+						<div class="slider col-md-9 slider">
+							<p>Can recognise and use familiar words and simple phrases for concrete purposes. Can introduce himself or someone else. Can ask and answer basic questions about home, family, surroundings, etc. Can communicate in a basic way when the other person speaks slowly and clearly, and is ready to repeat or reformulate to help communication. </p>
+						</div>
+						<div class="inner-label col-md-3">
+							<h2>Niveau A1</h2>
+							<h3>Level A1</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-1 col-sm-12  inner-pic niveau-a2">
+					<div class="row">
+						<div class="slider col-md-9 slider">
+							<p>Can understand isolated phrases and common expressions that relate to areas of high personal relevance (like personal or family information, shopping, immediate environment, work). Can communicate during easy or habitual tasks requiring a basic and direct information exchange on familiar subjects. Using simple words, can describe his or her surroundings and communicate immediate needs</p>
+						</div>
+						<div class="inner-label col-md-3">
+						<h2>Niveau A2</h2>
+						<h3>Level A2</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-1 col-sm-12  inner-pic niveau-b1">
+					<div class="row">
+						<div class="slider col-md-9 slider">
+							<p>Can manage in most situations that come up when travelling in a region where the language is spoken. Can produce a simple and cohesive text on familiar subjects or subjects of personal interest. Can narrate an event, an experience or a dream; describe a desire or goal, and outline reasons or explanations behind a project or idea.</p>
+						</div>
+						<div class="inner-label col-md-3">
+						<h2>Niveau B1</h2>
+						<h3>Level B1</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-1 col-sm-12  inner-pic niveau-b2">
+					<div class="row">
+						<div class="slider col-md-9 slider">
+							<p>Can understand the main ideas of concrete or abstract topics in a complex text, including a technical article in the user’s area of expertise. Can communicate with a degree of spontaneity and fluency during a conversation with a native speaker, in a way that is comfortable for everyone. </p>
+						</div>
+						<div class="inner-label col-md-3">
+						<h2>Niveau B2</h2>
+						<h3>Level B2</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-1 col-sm-12  inner-pic niveau-c1">
+					<div class="row">
+						<div class="slider col-md-9 slider">
+							<p>Can understand a wide range of long and complex texts, including any subtextual or stylistic nuances. Can express him or herself freely and fluidly, without obviously fumbling for words. Can use the language effectively and fluently in a social, professional or academic context. Can speak in a clear, organised way about complex subjects, developing a well-structured argument.</p>
+						</div>
+						<div class="inner-label col-md-3">
+						<h2>Niveau C1</h2>
+						<h3>Level C1</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-1 col-sm-12  inner-pic niveau-c2">
+					<div class="row">
+						<div class="slider col-md-9 slider">
+							<p>Can effortlessly understand almost everything he or she reads or hears. Capable of a coherent summary of events or arguments from oral or written sources. Can express him or herself precisely in a spontaneous, fluent way, conveying finer shades of meaning precisely.</p>
+						</div>
+						<div class="inner-label col-md-3">
+						<h2>Niveau C2</h2>
+						<h3>Level C2</h3>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="teachers">
+		<div class="row" style="height:100%">
+			<div class="col-md-7 inner-teacher-label">
+				<h2>Nos Enseignants</h2>
+				<h3>Our Instructors</h3>
+				<p>We have teachers with vast experience in the French language and culture. 100% of our faculty have spent at least 10 years in practicing the French language and have obtained a mark of C2 in TCF (<i>Test du Conaissance du Français</i>) or DELF (<i>Diplôme Étude de la Langue Française</i>). 70% have acquired their proficiency abroad.</p>
+			</div>
+		</div>
+	</div>
+	<div class="super-background">
+		<div class="teacher-list clearing">
+			<div class="row">
+				<div class="teacher-profile col-md-4 col-md-offset-1 col-sm-12">
+					<div class="picture-container">
+						<img src="teacher-ms-minchin.jpg" class="picture-teachers">
+					</div>
+					<h2>Ms Minchin</h2>
+					<p>Diviserunt sibi vestimenta mea, et super vestem meam miserunt sortem. Deus, Deus meus, respice in me: quare me dereliquisti? Longe a salute mea verba delictorum meorum. Deus meus, clamabo per diem, et non exaudies: et nocte, et non ad insipientiam mihi. Diviserunt sibi vestimenta mea, et super vestem meam miserunt sortem.</p>
+				</div>
+				<div class="teacher-profile col-md-4 col-md-offset-1 col-sm-12">
+					<div class="picture-container">
+						<img src="teacher-umbridge.jpg" class="picture-teachers">
+					</div>
+					<h2>Dolores Umbridge</h2>
+					<p>Diviserunt sibi vestimenta mea, et super vestem meam miserunt sortem. Deus, Deus meus, respice in me: quare me dereliquisti? Longe a salute mea verba delictorum meorum. Deus meus, clamabo per diem, et non exaudies: et nocte, et non ad insipientiam mihi. Diviserunt sibi vestimenta mea, et super vestem meam miserunt sortem.</p>
+				</div>
+
+				<div class="teacher-profile col-md-4 col-md-offset-1 col-sm-12">
+					<div class="picture-container">
+						<img src="teacher-snape.jpg" class="picture-teachers">
+					</div>
+					<h2>Severus Snape</h2>
+					<p>Diviserunt sibi vestimenta mea, et super vestem meam miserunt sortem. Deus, Deus meus, respice in me: quare me dereliquisti? Longe a salute mea verba delictorum meorum. Deus meus, clamabo per diem, et non exaudies: et nocte, et non ad insipientiam mihi. Diviserunt sibi vestimenta mea, et super vestem meam miserunt sortem.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="col-md-12 col-sm-12" id="footer-contact">
+		<div class="row" style="width:100%">
+			<div class="contact col-md-4 col-sm-12 clearing" >
+				<div style="width:100%!important">
+					<div class="footer-inner-div glyphicon glyphicon-map-marker glyphicon-editor"></div>
+					<p class="footer-inner-p" ><small>	
+					Hypothetical Block<br>
+					Non-Existent Street,<br>
+					Corner Imaginary Avenue,<br>
+					Presumptuous Province,<br>
+					Some Country<br>
+					<i>Office Hours: 8:00 am to 5:00 pm</i>
+					</small>
+					</p>
+				</div>
+				<div style="width:100%!important">
+					<div class="footer-inner-div glyphicon glyphicon-earphone glyphicon-editor"></div>
+					<p class="footer-inner-p col-md-8"><small>	
+					+63.999.0000000 | + 63 2 999.9999<br>
+					</small>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-md-offset-4 col-sm-12 adjust-footer-right clearing" id="footer-thing">
+				<p><small>Like and follow us&nbsp;&nbsp;&nbsp;&nbsp;</small></p>
+				<a href="https://www.facebook.com"><button><img src="facebook.gif"></button></a>
+				<a href="https://www.twitter.com"><button><img src="twitter.gif"></button></a>
+			</div>
+		</div>
+	</footer>
+
+
+	
+</body>
+</html>

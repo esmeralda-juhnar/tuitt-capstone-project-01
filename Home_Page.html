@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Déplace!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Didact+Gothic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Didact+Gothic|Lateef|Niconne" rel="stylesheet"> 
+
+	<style>
+
+	*{
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+	}
+
+	.border{
+		border:1px solid red;
+	}
+
+	.enclose{
+		height:40em;
+		margin:0 auto;
+		width:100%;
+		background:url("paris-background-homepage.jpg") no-repeat center;
+		background-size: cover;
+		position:fixed;
+		z-index:-1;
+
+	}
+
+	.image-parle-francais{
+		margin-left:auto;
+		margin-right:auto;
+		border-radius:100%;
+		border:0.4em solid white;
+		margin-top:2em;
+		height:10em;
+		width:10em;
+		background-image: url("parler-francais.jpg");
+  		background-size:cover;
+		background-repeat: no-repeat;
+	}
+
+	.image-vivez{
+		margin-left:auto;
+		margin-right:auto;
+		border-radius:100%;
+		border:0.4em solid white;
+		margin-top:2em;
+		height:10em;
+		width:10em;
+		background-image: url("assemble-nationale.jpg");
+  		background-size:cover;
+		background-repeat: no-repeat;
+	}
+
+	.image-telephone{
+		margin-left:auto;
+		margin-right:auto;
+		border-radius:100%;
+		border:0.4em solid white;
+		margin-top:2em;
+		height:10em;
+		width:10em;
+		background-image: url("telephone.jpg");
+  		background-size:cover;
+		background-repeat: no-repeat;
+	}
+
+	#enlarge:hover #les-images,#enlarge:hover h1{
+		transform:scale(1.1);
+		transition:0.7s;
+	}
+
+	#enlarge p{
+		min-height: 10em;
+	}
+
+	#enlarge button>a:link, #enlarge button>a:visited{
+		color:white;
+		font-style: none;
+	}
+
+	.another{
+		opacity: 0.4;
+		height: 25em;
+		margin-bottom:0;
+	}
+
+	.jumbotron>h1{
+		font-family: 'Lobster', cursive;
+	}
+
+	.jumbotron>p{
+		font-family: 'Lateef', cursive;
+		font-size: 2em;
+		line-height: 1em;
+		font-style: italic;
+		padding-left:5em;
+		padding-right:5em;
+
+	}
+
+	.jumbotron{
+		padding-left: 2em;
+
+	}
+
+	.adjuster{
+		opacity:0.4!important;
+		height: 5em!important;
+		margin:0!important;
+		font-weight:bold;
+		font-size: 1em;
+	}
+
+	.body-proper{
+		background-color: #bfbfbf!important;
+		height:40em!important;
+		width:100%!important;
+	}
+
+	.inner-adjust>h1{
+		font-family: 'Lobster', cursive;
+		font-size:3em;
+	}
+
+	.inner-col-adjust{
+		margin-left:4%;
+		margin-right:4%;
+	}
+
+	.inner-adjust>p{
+		text-align:justify;
+	}
+
+	.inner-adjust>h1{
+		text-align: center;
+	}
+
+	.inner-adjust>h2{
+		font-style: italic;
+	}
+
+	.contact{
+		color:white;
+		padding:1em	;
+		float:left;
+	}
+
+	.contact>div>p{
+		line-height: 0.8em!important;
+		font-weight:bold;
+		float:left;
+	}
+
+	.footer-inner-div{width:11.11%;}
+	.footer-inner-p{width:88.89%;
+		padding-left:0;
+		padding-right:0;
+	}
+	
+
+	@media (max-width: 768px){
+		.jumbotron>p{
+			font-size:1em!important;
+		}
+		.enclose{
+			height:25em!important;
+		}
+		.adjuster{
+			height:0em!important;
+		}
+		.another{
+			height:18em!important;
+		}
+		.inner-adjust{
+			font-size:0.8em!important;
+			float: left!important;
+		}
+		.inner-col-adjust{
+			margin:0!important;
+		}
+
+		.jumbotron>p{
+			padding-left:0!important;
+			padding-right:0!important;
+		}
+
+		.body-proper{
+			height:auto!important;
+			padding-bottom: 1em;
+		}
+
+		.clear:after{
+			content:"";
+			clear:both;
+			display:block;
+		}
+
+		.adjust-footer-right>p,.adjust-footer-right>button{
+		float:left!important;
+		}
+
+		.contact{
+			width:100%;
+		}
+
+		footer p{
+			font-size: 0.8em!important;
+		}
+
+	}
+
+	footer,footer>.row{
+		background-color: black;
+		padding:0!important;
+		margin:0!important;
+	}
+
+	.glyphicon-editor{
+		float:left;
+		color:white;
+		float:left;
+	}
+
+	.clearing:after{
+			content:"";
+			clear:both;
+			display:block;
+	}
+
+	.adjust-footer-right>p{
+		color:white;
+		font-weight:bold;
+		padding-top:1em;
+	}
+
+
+	
+	</style>
+
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    	<header class="enclose">
+		</header>
+
+    	<nav class="navbar navbar-default adjuster" id="header-id" style="width:100%">
+		  	<div class="container-fluid">
+
+		  		<div class="collapse navbar-collapse coloring col-md-10">
+		  			<ul class="nav navbar-nav" id="header-choices">
+				        <li><a href="Trip.html">Explore Itineraries</a></li>
+				        <li><a href="Curriculum.html">Explore Our French Classes</a></li>
+				        <li><a href="Contact.html">Contact</a></li>
+		  			</ul>
+				</div><!-- /.navbar-collapse -->
+				<ul class="nav navbar-nav navbar-right row" id="languages">
+			  				<li><a href="Home_Page.html" class="col-xs-1">English</a></li>
+			  				<li><a href="Home_Page_FR.html" class="col-xs-1 col-xs-offset-1">Français</a></li>
+				</ul>
+			</div><!-- /.container-fluid -->
+		</nav>
+
+	    
+
+
+		<div class="jumbotron another">
+			<h1>Vivez, 
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explorez, 
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parlez</h1>
+				<p style="color:black">Fulfill your dream of living a Parisian life by booking your itinerary with us. <br>If you are interested in French culture and language, we offer classes that cater to your needs.</p>
+		</div>
+
+		<div class="body-proper container-fluid col-sm-12 clear">
+			<div class="col-md-3 col-sm-12 inner-adjust inner-col-adjust" id="enlarge">
+				<div class="image-vivez" id="les-images">
+				</div>
+				<h1>Vivez</h1>
+				<h2><small>Explore Paris</small></h2>
+				<p>Looking for a Parisian holiday? Go no further from here. Bask under the Parisian sky and get lost in its pavements. Dine with friends in a fancy restaurant along Louvre-Rivoli and watch the romantic sunset along <i>La Seine</i>. </p>
+				<a href="Trip.html"><button class="btn btn-primary btn-primary">Explore</button></a>
+			</div>
+			<div class="col-md-3 col-sm-12 inner-adjust inner-col-adjust" id="enlarge">
+				<div class="image-parle-francais" id="les-images">
+					<!-- <img src="parler-francais.jpg"> -->
+				</div>
+				<h1>Parlez</h1>
+				<h2><small>Speak French like a pro.</small></h2>
+				<p>Looking for an opportunity to practice your French? Or are you a beginner in the French language? <i>Ne vous inquetez pas</i>! We have courses that would help you improve your proficiency in this language. </p>
+				<a href="Curriculum.html"><button class="btn btn-primary btn-primary">Explore</button></a>
+			</div>
+			<div class="col-md-3 col-sm-12 inner-adjust inner-col-adjust" id="enlarge">
+				<div class="image-telephone" id="les-images">
+				</div>
+				<h1>Contactez-Nous</h1>
+				<h2><small>Reach out to us.</small></h2>
+				<p>Do you have further questions? Thinking whether Paris is for you or not? Send us an e-mail and let us know your thoughts.</p>
+				<a href="Contact.html"><button class="btn btn-primary btn-primary">Explore</button></a>
+			</div>
+
+		</div>
+
+		<footer class="col-md-12 col-sm-12">
+		<div class="row" style="width:100%">
+			<div class="contact col-md-4 col-sm-12 clearing" >
+				<div style="width:100%!important">
+					<div class="footer-inner-div glyphicon glyphicon-map-marker glyphicon-editor"></div>
+					<p class="footer-inner-p" ><small>	
+					Hypothetical Block<br>
+					Non-Existent Street,<br>
+					Corner Imaginary Avenue,<br>
+					Presumptuous Province,<br>
+					Some Country<br>
+					<i>Office Hours: 8:00 am to 5:00 pm</i>
+					</small>
+					</p>
+				</div>
+				<div style="width:100%!important">
+					<div class="footer-inner-div glyphicon glyphicon-earphone glyphicon-editor"></div>
+					<p class="footer-inner-p col-md-8"><small>	
+					+63.999.0000000 | + 63 2 999.9999<br>
+					</small>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-md-offset-4 col-sm-12 adjust-footer-right clearing" id="footer-thing">
+				<p><small>Like and follow us&nbsp;&nbsp;&nbsp;&nbsp;</small></p>
+				<a href="https://www.facebook.com"><button><img src="facebook.gif"></button></a>
+				<a href="https://www.twitter.com"><button><img src="twitter.gif"></button></a>
+			</div>
+		</div>
+	</footer>
+
+
+	
+
+</body>
+</html>

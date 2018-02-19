@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us at Déplace.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Didact+Gothic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Didact+Gothic|Lateef|Niconne" rel="stylesheet"> 
+	<style>
+	*{
+		margin:0;
+		border:0;
+		box-sizing: border-box;
+	}	
+
+	nav{
+		z-index: 99999;
+		position:fixed;
+	}
+
+
+	.adjuster{
+		opacity:0.4!important;
+		height: 5em!important;
+		margin:0!important;
+		font-weight:bold;
+		font-size: 1em;
+		position:fixed!important;
+	}
+
+	.parallax{
+	    background-image: url("musee-en-france.jpg");
+	    min-height: 15em; 
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    margin-bottom: 0;
+	}	
+
+	.image-carte-postale{
+	    background-image: url("carte-postale.jpg");
+	    background-repeat: no-repeat;
+	    background-size: 160%;
+	    padding: 0;
+	}	
+
+	
+
+	.inner-box{
+		background-color: #cc9966;
+		opacity:0.7;
+		margin-bottom: 0;
+		min-height: 30em;
+	}
+
+	.part2{
+		height:497px;
+	}
+
+	.row-questionnaire{
+		background-color: #1f1f2e;
+		margin:0 auto;
+		float:left;
+		width:100%;
+		padding:0;
+		margin:0;
+
+	}
+
+	.image-carte-postale h1{
+		margin:0!important;
+		height:497px;
+	}
+
+	.float-left{
+		float:left;
+	}
+
+	.inner-div{
+		background-color:grey;
+		opacity:0.6;
+		color:black;
+		margin:0!important;
+		padding-left: 0;
+		padding-right: 2em;
+		height:15em!important;
+	}
+
+	.inner-div>h1{
+		font-family: 'Lobster', cursive;
+		padding-left: 1.5em;
+		text-align:left;
+
+	}
+
+	.inner-div>h2{
+		font-family: 'Courgette', cursive;
+		padding-left: 1.5em;
+
+	}
+
+	.inner-div-2>h1{
+		font-family: 'Lobster', cursive;
+		padding:3em;
+	}
+
+	.inner-div-2>h2{
+		font-family: 'Courgette', cursive;
+		padding:3em;
+	}
+
+	.well-override{
+		margin:0!important;
+		padding:0!important;
+	}
+
+	.clearing:after{
+			content:"";
+			clear:both;
+			display:block;
+	}
+
+	/*Footer*/
+	footer,footer>.row{
+		background-color: black;
+		padding:0!important;
+		margin:0!important;
+	}
+
+	.contact{
+		color:white;
+		padding:1em	;
+		float:left;
+	}
+
+	.contact>div>p{
+		line-height: 0.8em!important;
+		font-weight:bold;
+		float:left;
+	}
+
+
+	.glyphicon-editor{
+		float:lef		color:white;
+		float:left;
+	}
+
+	.adjust-footer-right>p{
+		color:white;
+		font-weight:bold;
+		padding-top:1em;
+	}
+
+	.footer-inner-div{width:11.11%;}
+	.footer-inner-p{width:88.89%;padding: 0!important}
+	#languages{
+		margin-right:0!important;
+	}
+
+	.radio label{
+		font-weight: bold; 
+		font-size:0.9em;
+		margin:0!important;
+	}
+
+	form{
+		font-family: font-family: 'Roboto', sans-serif;
+	}
+
+	@media (max-width: 768px){
+		.adjust-footer-right>p,.adjust-footer-right>button{
+		float:left!important;
+		}
+
+		.contact{
+			width:100%;
+		}
+
+		footer p{
+			font-size: 0.8em!important;
+		}
+
+		.small-screen-override{
+			width:0;
+			height:0;
+			border:0px;
+		}
+
+		.row-questionnaire h1{
+			font-size: 0.2em;	
+		}
+	}
+
+	@media (max-width: 992px){
+		.small-screen-override{
+			width:0;
+			height:0;
+			border:0px;
+		}
+	}
+
+	</style>
+
+
+
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+     <nav class="navbar navbar-default adjuster" id="header-id" style="width:100%">
+		  	<div class="container-fluid row">
+		  		<ul class="nav navbar-nav navbar-left col-xs-1" id="languages">
+	  				<li><a href="Home_Page.html">Home</a></li>
+			    </ul>
+		  		<div class="collapse navbar-collapse col-xs-2">
+		  			<ul class="nav navbar-nav" id="header-choices">
+				        <li><a href="Trip.html">Explore Our Itineraries</a></li>
+				        <li><a href="Curriculum.html">Explore Our French Classes</a></li>
+				        <li><a href="#footnote">Let's talk personally.</a></li>
+		  			</ul>
+				</div><!-- /.navbar-collapse -->
+				<ul class="nav navbar-nav navbar-right row" id="languages">
+	  				<li><a href="Contact.html" class="col-xs-1 col-xs-offset-1">English</a></li>
+	  				<li><a href="Contact-fr.html" class="col-xs-1 col-xs-offset-1">Français</a></li>
+			    </ul>
+			</div><!-- /.container-fluid -->
+	</nav>
+
+    	
+    <div class="parallax">
+    	<div class="row">
+			<div class="inner-div col-md-12 col-sm-12 float-left">
+				<br><br><br>
+				<h1>Send us a feedback or inquiry.</h1>
+				<h2>Envoyez-nous un message.</h2>
+			</div>
+		</div>
+    </div>
+    <div class="row row-questionnaire clearing">
+		<div class="well col-md-6 col-sm-12 inner-box col-sm-12">
+				<p style="font-weight: bold; margin:0!important;">Name:
+		  		<input type="text" class="form-control" placeholder="How do we call you?" style="margin:0!important"></p><br>
+		  		<p style="font-weight: bold; margin:0!important;">Email Address:
+		  		<input type="text" class="form-control" placeholder="How do we reach out to you?" style="margin:0!important"></p><br>
+		  		<p style="font-weight: bold; margin:0!important;">Subject:
+		  			<div class="form-group">
+			  			<div class="radio">
+					      <label><input type="radio" name="optradio">Trip Reservation&nbsp;&nbsp;</label>
+					      <label><input type="radio" name="optradio">Enrollment in French Classes&nbsp;&nbsp;</label>
+					      <label><input type="radio" name="optradio">Other Matters&nbsp;&nbsp;</label>
+					    </div>
+					</div>
+		  		</p>	
+				<p style="font-weight: bold; margin:0!important;">Message for us:
+		  		<textarea class="form-control" style="margin:0!important; height:12em;">
+		  		</textarea>
+		  		</p><br> 
+		  		<a href="Home_Page.html"><button class="btn btn-primary">Submit</button></a>
+		  		<!-- class="btn btn-primary btn-primary" -->
+		</div>
+		<div class="col-md-6 col-sm-12 part2 well-override clearing small-screen-override">
+			<div class="image-carte-postale">
+				<div class="inner-div-2" style="opacity:0.7;background-color:grey; height:100%;width:100%;">
+					<h1><br><br><br>&nbsp;&nbsp;&nbsp;Thank you<br> 
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for sending<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your message! <br></h1>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<footer style="width:100%" id="footnote">
+		<div class="row" style="width:100%">
+			<div class="contact col-md-4 col-sm-12 clearing" >
+				<div style="width:100%!important">
+					<div class="footer-inner-div glyphicon glyphicon-map-marker glyphicon-editor"></div>
+					<p class="footer-inner-p" ><small>	
+					Hypothetical Block<br>
+					Non-Existent Street,<br>
+					Corner Imaginary Avenue,<br>
+					Presumptuous Province,<br>
+					Some Country<br>
+					<i>Office Hours: 8:00 am to 5:00 pm</i>
+					</small>
+					</p>
+				</div>
+				<div style="width:100%!important">
+					<div class="footer-inner-div glyphicon glyphicon-earphone glyphicon-editor"></div>
+					<p class="footer-inner-p col-md-8"><small>	
+					+63.999.0000000 | + 63 2 999.9999<br>
+					</small>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-md-offset-4 col-sm-12 adjust-footer-right clearing" id="footer-thing">
+				<p><small>Like and follow us.&nbsp;&nbsp;&nbsp;&nbsp;</small></p>
+				<a href="https://www.facebook.com"><button><img src="facebook.gif"></button></a>
+				<a href="https://www.twitter.com"><button><img src="twitter.gif"></button></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
